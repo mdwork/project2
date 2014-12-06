@@ -942,6 +942,16 @@ a:hover                        { text-decoration:none; }
 		overflow: visible;
 		margin-left: 10px;
 	}
+    .box-alternative .alt-top-text,
+    .box-alternative .alt-top-text b {
+        font-size: 30px;
+    }
+    .box-alternative span {
+        font-size: 26px;
+    }
+    .box-alternative .btn-call-panel {
+        padding: 20px 25px;
+    }
 }
 @media screen and (max-width: 500px) {
     .list-city-office li span {
@@ -965,6 +975,13 @@ a:hover                        { text-decoration:none; }
 @media screen and (max-width: 450px) {
     .list-city-office li {
         width: 24%;
+    }
+    .box-alternative .alt-top-text,
+    .box-alternative .alt-top-text b {
+        font-size: 26px;
+    }
+    .box-alternative span {
+        font-size: 22px;
     }
 }
 @media screen and (max-width: 380px) {
@@ -1008,5 +1025,11 @@ a:hover                        { text-decoration:none; }
     }
     .offer-term.date {
         font-size: 26px;
+    }
+    .box-alternative span {
+        font-size: 18px;
+    }
+    .box-alternative .alt-top-text, .box-alternative .alt-top-text b {
+        font-size: 22px;
     }
 }
