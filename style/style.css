@@ -361,10 +361,7 @@ a:hover                        { text-decoration:none; }
 			box-sizing: border-box;
 			width: 18.19%;
 			height: 89px;
-			margin: 0 3.1%;
-			font-size: 20px;
-			font-weight: bold;
-			color: #fff;
+			margin: 0 3.1% 15px;
 			border: 4px solid #fff;
 			line-height: 89px;
 			vertical-align: middle;
@@ -373,6 +370,14 @@ a:hover                        { text-decoration:none; }
 			-moz-border-radius: 3px;
 			border-radius: 3px;
 		}
+            .list-city-office li span {
+                display: table-cell;
+                height: 83px;
+                vertical-align: middle;
+                font-size: 20px;
+                font-weight: bold;
+                color: #fff;
+            }
 	.box-offices .btn-submit {
 		width: 230px;
 		margin-top: 30px;
@@ -842,6 +847,9 @@ a:hover                        { text-decoration:none; }
     .list-benefits .icon img {
         width: auto;
     }
+    .list-city-office li span {
+        font-size: 16px;
+    }
 }
 @media screen and (max-width: 550px) {
 	.panel .wrap {
@@ -852,6 +860,19 @@ a:hover                        { text-decoration:none; }
 		overflow: visible;
 		margin-left: 10px;
 	}
+}
+@media screen and (max-width: 500px) {
+    .list-city-office li span {
+        font-size: 14px;
+    }
+    .box-offices span {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .list-city-office li {
+        width: 24%;
+    }
 }
 @media screen and (max-width: 380px) {
 	.box-contact .tell {
@@ -865,5 +886,19 @@ a:hover                        { text-decoration:none; }
 	}
     .list-benefits li {
         font-size: 12px;
+    }
+    .list-city-office li {
+        height: 80px;
+    }
+    .list-city-office li span {
+        font-size: 13px;
+        height: 74px;
+    }
+    .box-offices span {
+        font-size: 19px;
+    }
+    .box-offices .btn-submit {
+        height: 50px;
+        width: 200px;
     }
 }
