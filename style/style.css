@@ -313,15 +313,14 @@ a:hover                        { text-decoration:none; }
 		}
 	.list-benefits {
 		overflow: hidden;
+        width: 99%;
+        margin: 0 auto;
 	}
 		.list-benefits li {
 			display: inline-table;
 			margin-bottom: 40px;
 			width: 45.9%;
 			font-size: 16px;
-		}
-		.list-benefits li:nth-child(2n + 2) {
-			float: right;
 		}
 			.list-benefits .icon {
 				display: inline-table;
@@ -825,6 +824,25 @@ a:hover                        { text-decoration:none; }
 	}
 
 }
+@media screen and (max-width: 650px) {
+    .list-benefits li {
+        text-align: center;
+    }
+    .list-benefits .description {
+        float: none;
+        display: block;
+        width: 95%;
+    }
+    .list-benefits .icon {
+        height: auto;
+        width: auto;
+        margin-bottom: 10px;
+        border: none;
+    }
+    .list-benefits .icon img {
+        width: auto;
+    }
+}
 @media screen and (max-width: 550px) {
 	.panel .wrap {
 		overflow: hidden;
@@ -845,4 +863,7 @@ a:hover                        { text-decoration:none; }
 	.panel .text-center {
 		font-size: 13px;
 	}
+    .list-benefits li {
+        font-size: 12px;
+    }
 }
