@@ -608,7 +608,7 @@ a:hover                        { text-decoration:none; }
 					display: block;
 					width: 100%;
 					padding-bottom: 20px;
-					background: url("../images/content/shadow_img.png") no-repeat 0 137px;
+					background: url("../images/content/shadow_img.png") no-repeat bottom center;
 				}
 				.list-apartaments .header-city {
 					margin-bottom: 18px;
@@ -932,6 +932,21 @@ a:hover                        { text-decoration:none; }
     .wrap-offer-date, .wrap-offer-term {
         display: inline-block;
     }
+    .list-apartaments > li {
+        width: 48%;
+    }
+    .list-info-apartament {
+        float: none;
+    }
+    .list-apartaments .btn-submit {
+        float: none;
+        width: 120px;
+        margin-left: 0;
+        font-size: 13px;
+    }
+    .list-apartaments .foto {
+        background: none;
+    }
 }
 @media screen and (max-width: 550px) {
 	.panel .wrap {
@@ -983,6 +998,9 @@ a:hover                        { text-decoration:none; }
     .box-alternative span {
         font-size: 22px;
     }
+    .list-apartaments > li {
+        padding: 20px 15px;
+    }
 }
 @media screen and (max-width: 380px) {
 	.box-contact .tell {
@@ -1031,5 +1049,8 @@ a:hover                        { text-decoration:none; }
     }
     .box-alternative .alt-top-text, .box-alternative .alt-top-text b {
         font-size: 22px;
+    }
+    .list-apartaments > li {
+        padding: 15px 10px;
     }
 }
