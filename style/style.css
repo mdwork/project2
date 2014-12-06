@@ -389,39 +389,46 @@ a:hover                        { text-decoration:none; }
 	.box-why-us .header-section {
 		margin-bottom: 68px;
 	}
-.box-why-us .float-l {
-	margin-right: 42px;
-}
-.box-why-us section {
-	max-width: 407px;
-	width: 100%;
-	margin-bottom: 20px;
-	padding: 23px 26px 18px;
-	border: 4px solid #E8F3F4;
+    .box-why-us .box-text {
+        float: left;
+        width: 47.7%;
+        margin-right: 4.3%;
+    }
+    .box-why-us .right-box {
+        float: right;
+        width: 48%;
+    }
+        .box-why-us section {
+            margin-bottom: 20px;
+            padding: 23px 26px 18px;
+            border: 4px solid #E8F3F4;
 
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-}
-.box-why-us section header {
-	margin-bottom: 7px;
-}
-.box-why-us section h3 {
-	display: inline-block;
-	font-size: 19px;
-}
-.box-why-us .job-title {
-	float: right;
-	margin-top: 5px;
-	font-size: 14px;
-	color: #737373;
-}
-.box-why-us section p {
-	font-size: 16px;
-}
-.box-why-us header + iframe {
-	margin-top: 11px;
-}
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+            .box-why-us section header {
+                margin-bottom: 7px;
+            }
+                .box-why-us section h3 {
+                    display: inline-block;
+                    font-size: 19px;
+                }
+                .box-why-us .job-title {
+                    float: right;
+                    margin-top: 5px;
+                    font-size: 14px;
+                    color: #737373;
+                }
+            .box-why-us section p {
+                font-size: 16px;
+            }
+            .box-why-us iframe {
+                margin-top: 11px;
+                width: 100%;
+                max-width: 420px;
+                max-height: 250px;
+            }
 .why-us-submit-box {
 	overflow: hidden;
 	padding: 22px 0 7px 141px;
@@ -793,6 +800,30 @@ a:hover                        { text-decoration:none; }
 		line-height: 36px;
 	}
 }
+@media screen and (max-width: 900px) {
+    .why-us-submit-box {
+        background: none;
+    }
+    .box-why-us .right-box {
+        text-align: center;
+    }
+    .box-why-us section h3,
+    .box-why-us .job-title,
+    .why-us-submit-box span,
+    .why-us-submit-box .btn-submit {
+        display: block;
+        float: none;
+    }
+    .why-us-submit-box {
+        overflow: visible;
+        width: 99%;
+        margin-right: 0;
+        text-align: center;
+    }
+    .why-us-submit-box {
+        padding: 0;
+    }
+}
 @media screen and (max-width: 850px) {
 	.box-contact .tell {
 		float: none;
@@ -850,6 +881,11 @@ a:hover                        { text-decoration:none; }
     .list-city-office li span {
         font-size: 16px;
     }
+    .why-us-submit-box .btn-submit {
+        width: 215px;
+        height: 55px;
+        font-size: 18px;
+    }
 }
 @media screen and (max-width: 550px) {
 	.panel .wrap {
@@ -867,6 +903,17 @@ a:hover                        { text-decoration:none; }
     }
     .box-offices span {
         font-size: 24px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .box-why-us {
+        overflow: visible;
+    }
+    .box-why-us .right-box,
+    .box-why-us .box-text {
+        float: none;
+        width: 99%;
+        margin: 0 auto;
     }
 }
 @media screen and (max-width: 450px) {
@@ -900,5 +947,8 @@ a:hover                        { text-decoration:none; }
     .box-offices .btn-submit {
         height: 50px;
         width: 200px;
+    }
+    .why-us-submit-box {
+        font-size: 16px;
     }
 }
